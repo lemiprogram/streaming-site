@@ -1,0 +1,394 @@
+/* General */
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+a{
+    color: var(--link-color);
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+/* Header */
+/*
+                ****************************************************************
+                                        Heading
+                **************************************************************** 
+*/
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: var(--header-bg);
+    align-items: center;
+    height: var(--header-height);
+}
+:is(.header-logo) :is(a,a span){
+    font-size: var(--heading-s-sm);
+    color:var(--major-link-color);
+    font-weight: var(--heading-w-mn);
+    display: inline;
+}
+/*
+                ****************************************************************
+                                        Nav
+                **************************************************************** 
+*/
+.nav-content{
+    display: flex;
+    gap: 10px;
+    height: 100%;
+}
+.nav-content ul{
+    list-style: none;
+    display: flex ;
+    align-items: center;
+    overflow: hidden;
+    
+}
+.nav-content a{
+    color: var(--major-link-color);
+    font-weight: var(--text-w-lg);
+    font-size: var(--text-s-sm);
+    height: 20px;
+    padding: 100px 20px;
+}
+li .focus-nav{
+    background-color: var(--faded-black);
+    cursor: default;
+}
+:is(.nav-content a:not(.focus-nav)):is(:hover,:focus){
+    color: var(--hover-major-link-color);
+    
+    transform: scale(1.2);
+}
+.nav-shade{
+    display: none;
+}
+/*
+                ****************************************************************
+                                       Menu Icon
+                **************************************************************** 
+*/
+.menu{
+    display: none;
+    position: relative;
+    background-color: transparent;
+    flex-flow: column nowrap;
+    justify-content: center;
+    height: 40px;
+    width:40px;
+    padding: 4px;
+
+
+}
+
+.menu-icon, :is(.menu-icon) :is(::after,::before){
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--menu-icon-color);
+}
+
+:is(.menu-icon) :is(::after,::before){
+    content: "";
+}
+.menu-icon::before{
+    transform: translate(-20px, -12px);
+}
+.menu-icon::after{
+    transform: translate(10px , -20px);
+}
+
+/* Main */
+main{
+    min-height: 100vh;
+}
+/*
+                ****************************************************************
+                                        Leading Content
+                **************************************************************** 
+*/
+.leading-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    
+}
+.leading-content img {
+    width: 100vw;
+    opacity: 50%;
+    border-radius: 20px;
+}
+.leading-content .leading-text{
+    position: absolute;
+    left:0vw;
+    width: 50%;
+    height: 100%;
+    padding-left: 20px;
+    display: grid;
+    place-content: center start;
+    background-color: var(--faded-black);
+    box-shadow: 30px 0px 10px 20px var(--faded-black);
+}
+.search{
+    display: flex;
+
+}
+:is(.search-inp):is(input, input:focus){
+    width: 30vw;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: .6em;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    outline: none;
+    transform: scale(1);
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+.search-btn{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: none;
+    padding: .4em 1.7em;
+    border-radius: 0 20px 20px 0;
+}
+
+.genre-heading{
+    
+    font-size: var(--heading-s-sm);
+}
+.leading-text div{
+    font-size: var(--text-s-lg);
+
+}
+
+
+/*
+                ****************************************************************
+                                        Cards
+                **************************************************************** 
+*/
+.cards{
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card img{
+    width: 180px;
+    height: 270px;
+    border-radius: 20px;
+}
+/* Footer */
+footer{
+    max-height: 100vh;
+}
+/*
+                ****************************************************************
+                                        Footer Top
+                **************************************************************** 
+*/
+.footer-top{
+    height: 90%;
+    padding: 20px;
+    background-color: var(--footer-top-bg);
+    display: flex;
+    flex-flow: column wrap;
+    gap: 30px;
+}
+/*
+                ****************************************************************
+                                        Footer Subscriptions
+                **************************************************************** 
+*/
+.footer-subscription{
+    display: grid;
+    place-content:  center start;
+}
+.socials-icons svg{
+    width: 2em;
+    fill: var(--text-color);
+}
+.social-icons{
+    margin-left: 20px;
+
+}
+.inp-sub{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.inp-btns{
+    display: flex;
+    flex-wrap: wrap;
+}
+.socials-form form{
+    display: flex;
+    flex-flow: column wrap;
+}
+.socials-form label{
+display: block;
+margin-left: 2px;
+}
+.socials-form input, .socials-form input:focus{
+    padding: .4em .7em;
+    width: 30em;
+    font-size: .8em;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    outline: none;
+    transform: scale(1);
+}
+
+.socials-btn {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: none;
+    padding: .4em 1.7em;
+    border-radius:20px;
+}
+
+.sub-btn{
+    border-radius: 0 20px 20px 0;
+    margin-right: 10px;
+}
+/*
+                ****************************************************************
+                                        Footer Legals
+                **************************************************************** 
+*/
+.footer-legals{
+    display: grid;
+    place-content: center;
+    padding-top: 20px;
+    gap: 1em;
+}
+.footer-legals ul{
+    display: flex;
+}
+:is(.footer-legals ul) :is(li , a){
+    color: var(--secondary-color);
+}
+.footer-legals ul li:not(:nth-child(1)){    
+    
+    border-left: 1.5px solid var(--secondary-color);
+    padding-left:1em;
+    margin-left: 1em;
+}
+/*
+                ****************************************************************
+                                        Footer navs
+                **************************************************************** 
+*/
+.footer-navs{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 20px 0;
+
+}
+.footer-nav{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 30px;
+}
+.footer-nav ul{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+}
+.footer-nav a{
+    color: var(--major-link-color);
+}
+/*
+                ****************************************************************
+                                        Footer Bottom
+                **************************************************************** 
+*/
+.footer-btm{
+    height:10%;
+    background-color: var(--footer-btm-bg);
+    display: grid;
+    place-content: center;
+    padding: 20px 0;
+}
+/* Width 700px screens */
+@media not screen and (max-width:610px){
+    
+    .header-nav{
+        
+        display: none;
+        height: 100;
+        width: 100vw;
+
+    }
+    .header-nav ul {
+        display: flex;
+        flex-flow: column;  
+        list-style: none;
+        justify-content: space-evenly ;
+        padding:20px 0;
+        height: 90%;
+        align-items: start;
+        
+    
+    }
+    .menu{
+        cursor: pointer;
+        height: 48px;
+        width: 48px;
+        display: grid;
+        place-content: center;
+    }
+    .menu-icon{
+        height: 5px;
+        width: 40px;
+        border-radius: 5px;
+        
+    }
+    
+    .header-nav:is(:hover,:focus-within,:has(+.menu:is(:focus,:active))){
+        display: flex;
+        position: absolute  ;
+        z-index:200 ;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        justify-content: space-between;
+    
+    }   
+    
+    .nav-shade{
+    
+        background-color: rgb(0, 0, 0);
+        display: block;
+        width: 75%;
+    }
+    .nav-content{
+        background-color: cadetblue;
+        display: flex;
+        flex-direction: column;
+
+        width:25%;
+    }
+
+    .header-nav:has(.nav-shade:active){
+        display: none;
+    }
+}
+button div{
+    color: var(--c-text-color);
+}
