@@ -1,0 +1,26 @@
+:root{
+    --primary-color:var(--dark-blue);
+    --secondary-color:var(--light-blue);
+
+}
+main{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+main button{
+    width: 20vw;
+    margin-left: 20px ;
+    border-radius: 30px;
+}
+@media only screen and (max-width:610px){
+    
+    main button{
+        width: 30vw;
+    }
+    main{
+        flex-flow: column nowrap;
+        gap: 20px;
+    }
+}
