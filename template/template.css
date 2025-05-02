@@ -10,6 +10,16 @@ a{
 ul{
     list-style: none;
 }
+ul li a{
+    font-weight: var(--heading-w-mn);
+}
+button{
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 0;
+    font-weight: var(--heading-w-mn);
+}
 
 /* Header */
 /*
@@ -18,6 +28,10 @@ ul{
                 **************************************************************** 
 */
 header{
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
@@ -45,19 +59,19 @@ header{
     list-style: none;
     display: flex ;
     align-items: center;
-    overflow: hidden;
     
 }
-.nav-content a{
+.nav-content ul li a{
     color: var(--major-link-color);
     font-weight: var(--text-w-lg);
     font-size: var(--text-s-sm);
     height: 20px;
-    padding: 100px 20px;
+    padding: 3dvw 20px;
 }
 li .focus-nav{
-    background-color: var(--faded-black);
+    
     cursor: default;
+    border-bottom: 2px solid var(--secondary-color);
 }
 :is(.nav-content a:not(.focus-nav)):is(:hover,:focus){
     color: var(--hover-major-link-color);
@@ -74,36 +88,15 @@ li .focus-nav{
 */
 .menu{
     display: none;
-    position: relative;
-    background-color: transparent;
-    flex-flow: column nowrap;
-    justify-content: center;
-    height: 40px;
-    width:40px;
-    padding: 4px;
-
-
 }
-
-.menu-icon, :is(.menu-icon) :is(::after,::before){
-    width: 40px;
-    height: 5px;
-    border-radius: 5px;
-    background-color: var(--menu-icon-color);
-}
-
-:is(.menu-icon) :is(::after,::before){
-    content: "";
-}
-.menu-icon::before{
-    transform: translate(-20px, -12px);
-}
-.menu-icon::after{
-    transform: translate(10px , -20px);
+.menu svg{
+    width: 30px;
+    fill: var(--secondary-color);
 }
 
 /* Main */
 main{
+    margin-top: var(--header-height);
     min-height: 100vh;
 }
 /*
@@ -119,28 +112,34 @@ main{
     width: 100%;
     
 }
+.genres{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
 .leading-content img {
+    height: 100%;
     width: 100vw;
-    opacity: 50%;
     border-radius: 20px;
 }
 .leading-content .leading-text{
     position: absolute;
     left:0vw;
-    width: 50%;
+    width: 100%;
     height: 100%;
     padding-left: 20px;
     display: grid;
     place-content: center start;
-    background-color: var(--faded-black);
-    box-shadow: 30px 0px 10px 20px var(--faded-black);
+    background: linear-gradient(to right,#000, #00000065);
+    color: #fff;
+
 }
 .search{
     display: flex;
 
 }
 :is(.search-inp):is(input, input:focus){
-    width: 30vw;
+    width: 50vw;
     padding-left: 20px;
     display: flex;
     justify-content: center;
@@ -150,7 +149,7 @@ main{
     outline: none;
     transform: scale(1);
     background-color: var(--primary-color);
-    color: var(--text-color);
+    color: #fff;
 }
 .search-btn{
     color: var(--primary-color);
@@ -165,7 +164,7 @@ main{
     font-size: var(--heading-s-sm);
 }
 .leading-text div{
-    font-size: var(--text-s-lg);
+    font-size: var(--text-s-mn);
 
 }
 
@@ -178,11 +177,17 @@ main{
 .cards{
     display: flex;
     overflow-x: scroll;
-    gap: 20px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--text-color) var(--bg-color);
+    scrollbar-gutter: stable both-edges;    
+    gap: 25px;
     padding: 20px;
+    counter-reset: card;
+    width: 100%;
 }
 
 .card{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -191,6 +196,51 @@ main{
     width: 180px;
     height: 270px;
     border-radius: 20px;
+}
+.card div{
+    --text-color:#fff;
+    color: var(--text-color);
+
+}
+.card-title::before{
+    counter-increment: card;
+    content: counter(card) ". ";
+    top: 100%;
+    
+}
+.card-info{
+    text-align: center;
+
+    display: flex;
+    opacity: 0;
+    background-color: var(--faded-dark);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    font-weight: var(--text-w-lg);
+}
+.card-info svg{
+    width: 40px;
+    fill: var(--text-color);
+}
+.card-info svg:hover{
+    fill: var(--secondary-color);
+    cursor: pointer;
+    transition: 2s;
+}
+.card-info svg:not(:hover){
+    transition: 2s;
+}
+.card:hover>.card-info{
+    opacity: 100;
+    transition: 1s;
+}
+.card:not(:hover)>.card-info{
+    transition: 2s;
 }
 /* Footer */
 footer{
@@ -251,7 +301,10 @@ margin-left: 2px;
     outline: none;
     transform: scale(1);
 }
-
+@media not screen and (max-width:610px){
+    
+    
+}
 .socials-btn {
     color: var(--primary-color);
     background-color: var(--secondary-color);
@@ -301,12 +354,12 @@ margin-left: 2px;
 }
 .footer-nav{
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     gap: 30px;
 }
 .footer-nav ul{
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     gap: 20px;
 }
 .footer-nav a{
@@ -341,25 +394,19 @@ margin-left: 2px;
         justify-content: space-evenly ;
         padding:20px 0;
         height: 90%;
-        align-items: start;
+        align-items: center;
         
     
     }
     .menu{
-        cursor: pointer;
-        height: 48px;
-        width: 48px;
-        display: grid;
-        place-content: center;
+        display: block;
+
     }
-    .menu-icon{
-        height: 5px;
-        width: 40px;
-        border-radius: 5px;
-        
+    .menu svg{
+        cursor: pointer;
     }
     
-    .header-nav:is(:hover,:focus-within,:has(+.menu:is(:focus,:active))){
+    .header-nav:is(:hover/* ,:not(:hover) */,:focus-within,:has(+.menu:is(:focus,:active))){
         display: flex;
         position: absolute  ;
         z-index:200 ;
@@ -373,21 +420,39 @@ margin-left: 2px;
     
     .nav-shade{
     
-        background-color: rgb(0, 0, 0);
+        background-color: var(--faded-dark);
         display: block;
-        width: 75%;
+        width: 70%;
     }
     .nav-content{
-        background-color: cadetblue;
+        background-color: var(--bg-color);
         display: flex;
         flex-direction: column;
 
-        width:25%;
+        width:30%;
     }
 
     .header-nav:has(.nav-shade:active){
         display: none;
     }
+    .mode{
+        justify-content: center;
+    }/*
+                ****************************************************************
+                                        Card Image
+                **************************************************************** 
+*/
+.card img{
+    width: 150px;
+    height: 210px;
+    border-radius: 20px;
+}
+    /*
+                ****************************************************************
+                                        Footer
+                **************************************************************** 
+*/
+
 }
 button div{
     color: var(--c-text-color);

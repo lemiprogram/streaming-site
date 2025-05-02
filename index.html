@@ -4,45 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="template/root.css">
     <link rel="stylesheet" href="template/template.css">
+    <link rel="stylesheet" href="template/root.css">
     <link rel="stylesheet" href="template/home.css">
 </head>
 <body>
     <header>
-        <div class="header-logo logo"><a href="index.html"><span>W</span>FLIX</a></div>
+        <div class="header-logo logo" ><a href="index.html"><span>W</span>FLIX</a></div>
         <nav class="header-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="movies.html">Movies</a></li>
-                <li><a href="tv-shows.html">Tv-Series</a></li>
-                <li><a href="anime.html">Anime</a></li>
-            </ul>
-            <div class="mode icon">
-                <label>
-                    <input type="checkbox" name="mode-checkbox">
-                </label>
-            </div>
-        </nav>
-            <div class="menu">
-                <div class="menu-icon icon">
+            <div class="nav-content">
+                <ul>
+                    <li><a class="focus-nav" disabled href="index.html">Home</a></li>
+                    <li><a  href="movies.html">Movies</a></li>
+                    <li ><a  href="tv-shows.html">Tv Shows</a></li>
+                    <li><a  href="anime.html">Anime</a></li>
+                </ul>
+                <div class="mode icon">
+                    <label>
+                        <input type="checkbox" name="mode-checkbox">
+                    </label>
                 </div>
             </div>
+            <div class="nav-shade"></div>
+        </nav>
+            <div class="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+
+            </div>
     </header>
-    <main>
-        <div class="hero-section">
-            <div class="hero-text">
-                <div class="heading">WFLIX</div>
-                <div class="sub-heading">Welcome to WFLIX. Unlimited movies, TV-shows and more!</div>
-                <div class="pricing">Starts at Ksh 200. Cancel anytime.</div>
-                <div class="return">Ready to watch? Enter your email to create or restart your membership.</div>
-                <input type="text" placeholder="Email Address">
-                <button>Get Started</button>
+    <main id="top">
+        <div class="leading-content movie-content">
+            <div class="leading-image">
+                <img src="movies/images/leading.jpg" alt="">
+            </div>
+            <div class="leading-text">
+
+              <div class="search">
+                  <div class="text-heading">Movies </div>
+                    <button class="movie-btn"><a href="movies.html">Get Started</a></button>
+                </div>
             </div>
         </div>
-        <div class="trednding">
-            
+        <div class="leading-content movie-content">
+            <div class="leading-image">
+                <img src="tv-shows/images/leading.jpg" alt="">
+            </div>
+            <div class="leading-text">
+
+              <div class="search">
+                  <div class="text-heading">TvShows </div>
+                    <button class="tv-shows-btn"><a href="tv-shows.html">Get Started</a></button>
+                </div>
+            </div>
         </div>
+        <div class="leading-content movie-content">
+            <div class="leading-image">
+                <img src="anime/images/leading.jpg" alt="">
+            </div>
+            <div class="leading-text">
+
+              <div class="search">
+                  <div class="text-heading">Anime </div>
+                    <button class="anime-btn"><a href="anime.html">Get Started</a></button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="top-btn"><a href=""></a></div>
 
     </main>
     <footer>
@@ -91,7 +119,7 @@
               </div>
             <div class="footer-navs">
                 <div class="footer-nav nav-explore">
-                    <div class="footer-heading footer-explore">Explore</div>
+                    <div class="footer-heading footer-explore">Site Links</div>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="movies.html">Movies</a></li>
@@ -100,21 +128,19 @@
                     </ul>
                 </div>
                 <div class="footer-nav nav-explore">
-                    <div class="footer-heading footer-explore">Explore</div>
+                    <div class="footer-heading footer-explore">About</div>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="movies.html">Movies</a></li>
-                        <li><a href="tv-shows.html">Tv-Series</a></li>
-                        <li><a href="anime.html">Anime</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Change Login </a></li>
+                        <li><a href="#">Help-center</a></li>
+                        <li><a href="#">Support</a></li>
                     </ul>
                 </div>
                 <div class="footer-nav nav-explore">
-                    <div class="footer-heading footer-explore">Explore</div>
+                    <div class="footer-heading footer-explore">Contact Info</div>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="movies.html">Popular Now</a></li>
-                        <li><a href="tv-shows.html">Tv-Series</a></li>
-                        <li><a href="anime.html">Anime</a></li>
+                        <li>Email: <a href="#">wflix@gmail.co.ke</a></li>
+                        <li>Phone:<a href="#">+254-XXXX-XXXXX</a></li>
                     </ul>
                 </div>
             </div>

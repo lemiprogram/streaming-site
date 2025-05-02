@@ -16,11 +16,12 @@ html{
     /* colors */
     --faded-grey:#4a4a4a0c;
     --faded-black:#0000005c;
+    --faded-dark:#000000ae;
         /* Home Colors */
             --light-blue:#0091ff;
             --dark-blue:#101522;
         /* Movie Colors */
-            --light-green:#14b916;
+            --light-green:#0fe813;
             --dark-green:#091309;
 
         /* Tv-Series Colors */
@@ -34,7 +35,7 @@ html{
         --orange:#ec9208;
         --mood-red:#c90536;
         --major-link-color:var(--secondary-color);
-        --header-bg:var(--faded-grey);
+        --header-bg:var(--bg-color);
         --footer-top-bg:var(--faded-black);
         --footer-btm-bg:var(--secondary-color);
         --menu-icon-color:var(--secondary-color);
@@ -74,7 +75,7 @@ html{
 */
 .mode{
     display: flex;
-    align-items: centerz    ;
+    align-items: center  ;
 }
 .mode label{
     cursor: pointer;
@@ -94,7 +95,7 @@ html{
     background-repeat: no-repeat;
     background-size: 14px;
     background-position: center;
-    padding: 7px;
+    padding: 10px;
     margin-top: 10px;
 }
 .mode input{

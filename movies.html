@@ -12,24 +12,511 @@
     <header>
         <div class="header-logo logo"><a href="index.html"><span>W</span>FLIX</a></div>
         <nav class="header-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a  class="focus-nav" disabled  href="movies.html">Movies</a></li>
-                <li ><a href="tv-shows.html">Tv Shows</a></li>
-                <li><a href="anime.html">Anime</a></li>
-            </ul>
-            <div class="mode icon">
-                <label>
-                    <input type="checkbox" name="mode-checkbox">
-                </label>
+            <div class="nav-content">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="focus-nav" disabled href="movies.html">Movies</a></li>
+                    <li ><a  href="tv-shows.html">Tv Shows</a></li>
+                    <li><a  href="anime.html">Anime</a></li>
+                </ul>
+                <div class="mode icon">
+                    <label>
+                        <input type="checkbox" name="mode-checkbox">
+                    </label>
+                </div>
             </div>
+            <div class="nav-shade"></div>
         </nav>
             <div class="menu">
-                <div class="menu-icon icon">
-                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+
             </div>
     </header>
     <main>
+        <div class="leading-content">
+            <div class="leading-image">
+                <img src="movies/images/leading.jpg" alt="">
+            </div>
+            <div class="leading-text">
+
+                <div class="text-heading">Welcome to WFLIX </div>
+                <div class="search">
+                    <input class="search-inp" type="text" placeholder="Movie Search">
+                    <button class="search-btn">Search</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="genres">
+
+          <div class="genre trending">
+            <div class="genre-heading">Trending</div>
+              <div class="cards">
+    
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/trending/1.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">Chainsaw Man</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2023 ~ ongoing</div>
+                        </div>
+                    </div>      
+      
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/trending/2.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">Berserk</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2017 ~ 2018</div>
+                        </div>
+                    </div>      
+      
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/trending/3.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">Naruto</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2013 ~ ongoing</div>
+                        </div>
+                    </div>      
+      
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/trending/4.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">Jujutsu Kaisen</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2011 ~ 2013</div>
+                        </div>
+                    </div>      
+      
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/trending/5.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">One Piece</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2016 ~ 2025</div>
+                        </div>
+                    </div>      
+      
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/trending/6.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">One Punch Man</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2014 ~ ongoing</div>
+                        </div>
+                    </div>      
+      
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/trending/7.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">Solo Leveling</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2016 ~ 2021</div>
+                        </div>
+                    </div>      
+      
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/trending/8.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">Ano Hana</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2016 ~ ongoing</div>
+                        </div>
+                    </div>      
+      
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/trending/9.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">Tokyo Ghoul</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2013 ~ ongoing</div>
+                        </div>
+                    </div>      
+      
+ 
+              </div>
+          </div>
+    
+
+          <div class="genre action">
+            <div class="genre-heading">Action</div>
+              <div class="cards">
+    
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/action/1.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">One Piece</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2020 ~ ongoing</div>
+                        </div>
+                    </div>      
+      
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/action/2.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">Attack On Titans</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2015 ~ 2019</div>
+                        </div>
+                    </div>      
+      
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/action/3.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">Naruto</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2024 ~ ongoing</div>
+                        </div>
+                    </div>      
+      
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/action/4.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">Jujutsu Kaisen</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2014 ~ ongoing</div>
+                        </div>
+                    </div>      
+      
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/action/5.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">Demon Slayer</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2024 ~ ongoing</div>
+                        </div>
+                    </div>      
+      
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/action/6.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">Seven Deadly Sins</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2016 ~ ongoing</div>
+                        </div>
+                    </div>      
+      
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/action/7.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">My Hero Academia</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2024 ~ ongoing</div>
+                        </div>
+                    </div>      
+      
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/action/8.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">Tokyo Ghoul</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2019 ~ ongoing</div>
+                        </div>
+                    </div>      
+      
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/action/9.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">Fairy Tail</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2017 ~ ongoing</div>
+                        </div>
+                    </div>      
+      
+ 
+              </div>
+          </div>
+    
+
+          <div class="genre romance">
+            <div class="genre-heading">Romance</div>
+              <div class="cards">
+    
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/romance/1.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">Gintama</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2018 ~ 2019</div>
+                        </div>
+                    </div>      
+      
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/romance/2.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">Zom 100</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2014 ~ ongoing</div>
+                        </div>
+                    </div>      
+      
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/romance/3.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">Noragami</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2012 ~ 2014</div>
+                        </div>
+                    </div>      
+      
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/romance/4.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">Food Wars</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2012 ~ 2017</div>
+                        </div>
+                    </div>      
+      
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/romance/5.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">Saiki K</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2018 ~ 2020</div>
+                        </div>
+                    </div>      
+      
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/romance/6.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">One Punch Man</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2023 ~ ongoing</div>
+                        </div>
+                    </div>      
+      
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/romance/7.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">Blood Lad</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2018 ~ ongoing</div>
+                        </div>
+                    </div>      
+      
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/romance/8.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">Hinamatsuri</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2019 ~ ongoing</div>
+                        </div>
+                    </div>      
+      
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/romance/9.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">Grand Blue</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2014 ~ ongoing</div>
+                        </div>
+                    </div>      
+      
+ 
+              </div>
+          </div>
+    
+
+          <div class="genre thriller">
+            <div class="genre-heading">Thriller</div>
+              <div class="cards">
+    
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/thriller/1.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">Slam Dunk</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2017 ~ 2024</div>
+                        </div>
+                    </div>      
+      
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/thriller/2.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">Aoi Ashi</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2012 ~ 2025</div>
+                        </div>
+                    </div>      
+      
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/thriller/3.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">Ahiru No Sora</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2019 ~ ongoing</div>
+                        </div>
+                    </div>      
+      
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/thriller/4.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">Hajime No Ippo</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2024 ~ ongoing</div>
+                        </div>
+                    </div>      
+      
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/thriller/5.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">Haikyuu</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2011 ~ ongoing</div>
+                        </div>
+                    </div>      
+      
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/thriller/6.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">Kuruko No Basket</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2011 ~ 2014</div>
+                        </div>
+                    </div>      
+      
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/thriller/7.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">Blue Lock</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2022 ~ ongoing</div>
+                        </div>
+                    </div>      
+      
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/thriller/8.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">Be Blues</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2024 ~ ongoing</div>
+                        </div>
+                    </div>      
+      
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="movies/images/thriller/9.jpg" alt="Movies image">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">The Boxer</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                          <div class="card-since">2024 ~ ongoing</div>
+                        </div>
+                    </div>      
+      
+ 
+              </div>
+          </div>
+    
+</div>
 
     </main>
     <footer>
@@ -78,7 +565,7 @@
               </div>
             <div class="footer-navs">
                 <div class="footer-nav nav-explore">
-                    <div class="footer-heading footer-explore">Explore</div>
+                    <div class="footer-heading footer-explore">Site Links</div>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="movies.html">Movies</a></li>
@@ -87,21 +574,19 @@
                     </ul>
                 </div>
                 <div class="footer-nav nav-explore">
-                    <div class="footer-heading footer-explore">Explore</div>
+                    <div class="footer-heading footer-explore">About</div>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="movies.html">Movies</a></li>
-                        <li><a href="tv-shows.html">Tv-Series</a></li>
-                        <li><a href="anime.html">Anime</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Change Login </a></li>
+                        <li><a href="#">Help-center</a></li>
+                        <li><a href="#">Support</a></li>
                     </ul>
                 </div>
                 <div class="footer-nav nav-explore">
-                    <div class="footer-heading footer-explore">Explore</div>
+                    <div class="footer-heading footer-explore">Contact Info</div>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="movies.html">Popular Now</a></li>
-                        <li><a href="tv-shows.html">Tv-Series</a></li>
-                        <li><a href="anime.html">Anime</a></li>
+                        <li>Email: <a href="#">wflix@gmail.co.ke</a></li>
+                        <li>Phone:<a href="#">+254-XXXX-XXXXX</a></li>
                     </ul>
                 </div>
             </div>
