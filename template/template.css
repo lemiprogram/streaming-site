@@ -294,7 +294,7 @@ margin-left: 2px;
 }
 .socials-form input, .socials-form input:focus{
     padding: .4em .7em;
-    width: 30em;
+    width: 60vw;
     font-size: .8em;
     border-radius: 20px 0 0 20px;
     border: none;
@@ -406,7 +406,7 @@ margin-left: 2px;
         cursor: pointer;
     }
     
-    .header-nav:is(:hover/* ,:not(:hover) */,:focus-within,:has(+.menu:is(:focus,:active))){
+    .header-nav:is(:hover/* ,:not(:hover) */,:focus-within,:has(+.menu:is(:focus,:focus-within,:active))){
         display: flex;
         position: absolute  ;
         z-index:200 ;
@@ -453,6 +453,10 @@ margin-left: 2px;
                 **************************************************************** 
 */
 
+.footer-navs{
+    flex-direction: column;
+    gap: 20px;
+}
 }
 button div{
     color: var(--c-text-color);
